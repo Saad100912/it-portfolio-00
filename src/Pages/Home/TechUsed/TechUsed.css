@@ -1,0 +1,29 @@
+.gradient-text {
+    font-family: "Nunito", sans-serif;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    background-image: linear-gradient(
+        to right,
+        red 25%,
+        #be123c 25%,
+        #1e3a8a 75%,
+        blue 75%
+    );
+    background-size: 100%;
+    background-repeat: repeat;
+    margin-bottom: 50px;
+
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+}
+@media only screen and (max-width: 600px) {
+    .gradient-text {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+}
